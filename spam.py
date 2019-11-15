@@ -17,12 +17,12 @@ async def berichtKiezer():
 async def chooseChannel():
 	keuze = input("# Spam a server or user? (s/u) ")
 	if keuze == "s":
-		channelID = input("# Channel ID: ")
+		channelID = input("643664081873666080: ")
 		kanaal = client.get_channel(channelID)
 		return kanaal
 	elif keuze == "u":
-		userID = input("# User ID: ")
-		server = input("# Server ID: ") #Random server where both you and the target are in
+		userID = input("462325953591377920: ")
+		server = input("641026621741989928: ") #Random server where both you and the target are in
 		kanaal = client.get_server(server).get_member(userID)
 		return kanaal
 	else:
@@ -55,4 +55,4 @@ async def send():
 	else:
 		print("! OK. You can close this window now.")
 
-client.run("insert_token_here", bot=False)
+client.run("NjMzMzg5MTI0NTk3OTczMDAz.Xc0n5Q.rbf1PCpDd0MFHH0Lr1OXT73f7Hs", bot=False)
